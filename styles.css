@@ -43,7 +43,41 @@ nav ul li a:hover {
 }
 
 .image img {
-    width: 300px;
+    width: 250px;
+}
+
+/* Hero Section */
+.hero {
+    background: url('images/skincare-banner.jpg') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+    border-radius: 10px;
+}
+
+.hero-content {
+    max-width: 600px;
+    margin: 0 auto;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Active Navigation */
+nav ul li a.active {
+    border-bottom: 2px solid #ff5733;
+}
+
+/* Image Gallery */
+.image-gallery {
+    display: flex;
+    gap: 20px;
+}
+
+.image-gallery img {
+    width: 250px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 /* Product Page */
@@ -109,4 +143,66 @@ footer {
     color: white;
     text-align: center;
     padding: 10px;
-}
+}    this is the css part do not make any changes just add whatever need to modify this homepage part <!-- Name: nushrat jahan nupur | ID: 2210949 -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Skin - Home</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Welcome to Happy Skin</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="contacts.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h2>Radiant Skin Starts Here</h2>
+            <p>Discover skincare that’s natural, nourishing, and made just for you.</p>
+            <button onclick="showAlert()">Learn More</button>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="home-container">
+        <div class="text">
+            <h2>Your Skin Deserves the Best!</h2>
+            <p>At Happy Skin, we believe in the power of nature. Our products are crafted with organic ingredients, free from harmful chemicals, and designed to nourish your skin.</p>
+            <h3>Why choose Happy Skin?</h3>
+            <ul>
+                <li>🌿 100% Natural Ingredients</li>
+                <li>🐰 Eco-Friendly & Cruelty-Free</li>
+                <li>🧪 Dermatologically Tested</li>
+                <li>✨ Suitable for All Skin Types</li>
+            </ul>
+        </div>
+
+        <!-- Image Section -->
+        <div class="image-gallery">
+            <img src="images/pexels-a-darmel-8989973 (1).jpg" alt="Happy Skin Products">
+            <img src="images/skincare.avif" alt="Skincare Collection">
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Happy Skin. All Rights Reserved.</p>
+        <p>Follow us for beauty tips and exclusive offers!</p>
+    </footer>
+
+</body>
+</html>
